@@ -14,14 +14,16 @@ body {
 #content h1 {
     font-size:20px; 
     font-family:Arial, Helvetica, sans-serif;
-    color:#0065BB;
-    line-height: 70%;
+    color: #0065BB;
+    border-bottom: 1.5px solid #0065BB;
 }
+
 #content h2 {
     font-size:12px; 
     font-family:Verdana, Geneva, sans-serif;
     color:#0065BB;
 }
+
 #content h3 {
     font-size:30px; 
     font-family:Arial, Helvetica, sans-serif;
@@ -38,32 +40,31 @@ body {
     color:#FFF;
 }
 
+#content p {
+    margin: 0 10px 1ex 25px;
+}
+
 #img {
-    background-image:url(img/r1_c2.gif);
-    background-repeat:repeat-x;
-    height:37px;
-    color:#FFF;
+    background-image: url(img/r1_c2.gif);
+    background-repeat: repeat-x;
+    height: 37px;
+    color: #FFF;
 }
 
 #img p {
-    position:absolute;
-    top:5px;
-    left:200px;
+    position: absolute;
+    top: 5px;
+    left: 200px;
 }
 
 #img a {
-    font-family:Arial, Helvetica, sans-serif;
-    color:#FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
-/* #main { */
-/*     margin:50px auto; */
-/*     width:800px; */
-/* } */
-
 #main {
-    float:left;
-    width:520px;
+    float: left;
+    width: 550px;
 }
 
 #content ul{
@@ -91,23 +92,27 @@ body {
 }
 
 #header {
+    font-family: Arial, Helvetica, sans-serif;
     background: none repeat scroll 0 0 #3D88C9;
     height: 73px;
     text-align: center;
 }
 
-#title {
-    position: absolute;
-    float: left;
-    font-size: 40px;
-}
-
-#header .content {
+#header_container {
     position: absolute;
     margin-left:50%;
     left: -400px; 
-    height: 80px;
+    height: 73px;
     width: 800px;
+}
+
+#title {
+    position: absolute;
+    bottom: 0px;
+    float: left;
+    font-size: 40px;
+    text-shadow: 2px 2px 3px rgba(50, 50, 50, 0.8);
+    color: white;
 }
 
 #menubar {
@@ -116,20 +121,21 @@ body {
     right: 10px;
     margin: 0;
 }
+
 #menubar ul {
     width: 100%;
     margin: 0;
     display: block;
     height: 34px;
 }
+
 #menubar li {
     font-size: 16px;
 	float: right;
 	list-style: none;
-	font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
 
-	border-width:0 1px;
+	border-width: 0 1px;
     border-style: solid;
     border-width: 1px;
     -moz-border-radius: 5px;
@@ -146,8 +152,10 @@ body {
     text-shadow: 1px 1px 3px rgba(50, 50, 50, 0.3);
 	text-decoration: none;
 }
+
 #menubar li a:hover {
 }
+
 #menubar .current_page_item {
 	border-color:#F2F2F2;
     background-color: #F2F2F2;
