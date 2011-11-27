@@ -7,42 +7,10 @@ body {
 }
 
 #container {
-	margin:0 auto;
-	width:800px;
+    margin:0 auto;
+    width:960px;
 }
 
-#content h1 {
-    font-size:20px; 
-    font-family:Arial, Helvetica, sans-serif;
-    color: #0065BB;
-    border-bottom: 1.5px solid #0065BB;
-}
-
-#content h2 {
-    font-size:12px; 
-    font-family:Verdana, Geneva, sans-serif;
-    color:#0065BB;
-}
-
-#content h3 {
-    font-size:30px; 
-    font-family:Arial, Helvetica, sans-serif;
-    line-height:50%;
-}
-
-#content a {
-    text-decoration: none;
-    color:#006;
-}
-
-#content a:hover {
-    background-color:#0065BB;
-    color:#FFF;
-}
-
-#content p {
-    margin: 0 10px 1ex 25px;
-}
 
 #img {
     background-image: url(img/r1_c2.gif);
@@ -58,41 +26,35 @@ body {
 }
 
 #img a {
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
 #main {
     float: left;
-    width: 550px;
-}
-
-#content ul{
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 10px;
-}
-
-#content li {
-    margin-left: 20px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 1.7em;
-    color: #6F6F6F;
+    /* width: 550px; */
+    width: 70%;
 }
 
 #sidebar {
     float:right;
     margin:20px auto;
-    width:234px;
+    width: 27%;
+}
+
+#sidebar p {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0.5em 0 0.8em 0;
+}
+
+#sidebar h1 {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 10px 0 5px 0;
 }
 
 #header {
-    font-family: Arial, Helvetica, sans-serif;
     background: none repeat scroll 0 0 #3D88C9;
     height: 73px;
     text-align: center;
@@ -101,9 +63,9 @@ body {
 #header_container {
     position: absolute;
     margin-left:50%;
-    left: -400px; 
+    left: -480px; 
     height: 73px;
-    width: 800px;
+    width: 960px;
 }
 
 #title {
@@ -112,6 +74,11 @@ body {
     float: left;
     font-size: 40px;
     text-shadow: 2px 2px 3px rgba(50, 50, 50, 0.8);
+    color: white;
+}
+
+#title a{
+    text-decoration: none;
     color: white;
 }
 
@@ -131,11 +98,11 @@ body {
 
 #menubar li {
     font-size: 16px;
-	float: right;
-	list-style: none;
+    float: right;
+    list-style: none;
     font-style: normal;
 
-	border-width: 0 1px;
+    border-width: 0 1px;
     border-style: solid;
     border-width: 1px;
     -moz-border-radius: 5px;
@@ -144,20 +111,21 @@ body {
     
     margin-left: 10px;
     width: 92px;
-
-    padding: 9px 0;
 }
 
 #menubar li a {
+    display: block;
+    padding: 9px 0;
+    width: 92px;
     text-shadow: 1px 1px 3px rgba(50, 50, 50, 0.3);
-	text-decoration: none;
+    text-decoration: none;
 }
 
 #menubar li a:hover {
 }
 
 #menubar .current_page_item {
-	border-color:#F2F2F2;
+    border-color:#F2F2F2;
     background-color: #F2F2F2;
 }
 
@@ -170,7 +138,7 @@ body {
 }
 
 #menubar .page_item{
-	border-color: #15446d;
+    border-color: #15446d;
     color: #FFFFFF;
     background-color: #15446d;
 }
@@ -181,5 +149,132 @@ body {
 
 .center_box {
     margin:0 auto;
+}
+
+* {
+    font-family:Helvetica, Arial, sans-serif;
+}
+
+.entry h1,.entry h2,.entry h3,.entry h4,.entry h5,.entry h6 {
+    margin:10px 0 5px 0;
+}
+
+.entry h1 {
+    font-size:22px; 
+    font-weight:bold;
+    color: #0065BB;
+    border-bottom: 1.5px solid #0065BB;
+    margin-top: 20px;
+}
+
+.entry h2 {
+    font-size:18px; 
+    font-weight:bold;
+    color:#000000;
+}
+
+.entry h3 {
+    font-weight: normal;
+    font-size:15px;
+}
+
+#content a {
+    color:#0065BB;
+    text-decoration: none;
+}
+
+#content a:hover {
+    color:#0065BB;
+    text-decoration: underline;
+}
+
+.entry p {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 5px 0 10px 0;
+}
+
+.entry img {
+    background: #fff;
+    max-width: 640px;
+    height: auto;
+}
+
+.entry .alignleft, .entry img.alignleft {
+    display:inline;
+    float:left;
+    margin-right:10px;
+    margin-top:10px;
+}
+
+.entry .alignright, .entry img.alignright {
+    display:inline;
+    float:right;
+    margin-left:10px;
+    margin-top:10px;
+}
+
+.entry .aligncenter, .entry img.aligncenter {
+    clear:both;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.entry img.alignleft, .entry img.alignright, .entry img.aligncenter {
+    margin-bottom:10px;
+}
+
+.entry table {
+    background:#fff;
+    border:1px solid #ccc;
+    border-width:2px;
+    border-collapse:collapse;
+    margin:5px 0 10px;
+}
+
+.entry th, .entry td {
+    border:1px solid #ccc;
+    padding:3px 10px;
+    text-align:left;
+    vertical-align:top;
+}
+
+.entry .entry tr.even td {
+    background:#f7f7f7;
+}
+
+.entry th {
+    background:#edeff0;
+}
+
+.entry blockquote {
+    padding:10px;
+    margin:0 0 20px;
+    border:1px solid #cbcbcb;
+    border-left:3px solid #cbcbcb;
+    background:#f2f2f2;
+}
+
+.entry code {
+    background:#333;
+    color:#ddd;
+}
+
+.entry ul{
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 10px;
+    font-size: 14px;
+}
+
+.entry li {
+    margin-left: 20px;
+    line-height: 1.3em;
 }
 
