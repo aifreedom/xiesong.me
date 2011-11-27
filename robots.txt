@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /resume.pdf
 Disallow: /CV-Song.XIE.pdf
+Disallow: /aprillee.me/
