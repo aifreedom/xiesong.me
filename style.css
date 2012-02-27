@@ -178,12 +178,12 @@ body {
     font-size:15px;
 }
 
-#content a {
+#container a {
     color:#0065BB;
     text-decoration: none;
 }
 
-#content a:hover {
+#container a:hover {
     color:#0065BB;
     text-decoration: underline;
 }
